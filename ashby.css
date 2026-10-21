@@ -580,3 +580,18 @@ button[class*="_primary_"] svg path {
     font-size: 16px !important;
   }
 }
+
+/* =========================================================
+   FICHE OFFRE : espace entre la colonne infos et l'Overview
+   ========================================================= */
+
+.ashby-job-posting-left-pane {
+  margin-right: 64px !important;
+}
+
+@media (max-width: 767px) {
+  .ashby-job-posting-left-pane {
+    margin-right: 0 !important;
+    margin-bottom: 32px !important;
+  }
+}
