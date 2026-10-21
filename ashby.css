@@ -21,8 +21,8 @@
   --colorAppBackground: var(--p-beige);
   --colorPrimary900: var(--p-black);
   --colorPrimary600: var(--p-black);
-  --widthMaxContent: 781px;
-  --widthMaxJobBoard: 781px;
+  --widthMaxContent: 100%;
+  --widthMaxJobBoard: 100%;
   --widthMaxSubscriptionPreferences: 600px;
   --borderRadiusContainer: 2px;
   --borderRadiusControl: 4px;
@@ -578,5 +578,20 @@ button[class*="_primary_"] svg path {
   .ashby-job-posting-brief-details,
   .ashby-job-posting-brief-details * {
     font-size: 16px !important;
+  }
+}
+
+/* =========================================================
+   FICHE OFFRE : espace entre la colonne infos et l'Overview
+   ========================================================= */
+
+.ashby-job-posting-left-pane {
+  margin-right: 64px !important;
+}
+
+@media (max-width: 767px) {
+  .ashby-job-posting-left-pane {
+    margin-right: 0 !important;
+    margin-bottom: 32px !important;
   }
 }
