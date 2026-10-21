@@ -21,8 +21,8 @@
   --colorAppBackground: var(--p-beige);
   --colorPrimary900: var(--p-black);
   --colorPrimary600: var(--p-black);
-  --widthMaxContent: 781px;
-  --widthMaxJobBoard: 781px;
+  --widthMaxContent: 100%;
+  --widthMaxJobBoard: 100%;
   --widthMaxSubscriptionPreferences: 600px;
   --borderRadiusContainer: 2px;
   --borderRadiusControl: 4px;
