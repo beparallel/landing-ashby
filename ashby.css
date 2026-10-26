@@ -21,8 +21,8 @@
   --colorAppBackground: var(--p-beige);
   --colorPrimary900: var(--p-black);
   --colorPrimary600: var(--p-black);
-  --widthMaxContent: 781px;
-  --widthMaxJobBoard: 781px;
+  --widthMaxContent: 100%;
+  --widthMaxJobBoard: 100%;
   --widthMaxSubscriptionPreferences: 600px;
   --borderRadiusContainer: 2px;
   --borderRadiusControl: 4px;
@@ -140,21 +140,31 @@ body {
   margin-bottom: 16px !important;
 }
 
-/* Bouton de fermeture (porte aussi .ashby-job-board-reset-filters-label) */
+/* Bouton de fermeture / Reset filters (porte aussi .ashby-job-board-reset-filters-label) */
 [class*="_filtersAction_"] {
   display: inline-flex !important;
   align-items: center;
   justify-content: center;
-  width: 30px !important;
+  gap: 8px;
+  width: auto !important;
+  min-width: 30px !important;
   height: 30px !important;
-  padding: 0 !important;
+  padding: 0 12px !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
   background: var(--p-black-10) !important;
   border: none !important;
   border-radius: 4px !important;
   color: var(--p-black) !important;
 }
 
+[class*="_filtersAction_"] .ashby-job-board-reset-filters-label {
+  white-space: nowrap !important;
+  word-break: normal !important;
+}
+
 [class*="_filtersDismissIcon_"] {
+  flex-shrink: 0 !important;
   width: 12px !important;
   height: 12px !important;
   fill: var(--p-black) !important;
@@ -578,5 +588,20 @@ button[class*="_primary_"] svg path {
   .ashby-job-posting-brief-details,
   .ashby-job-posting-brief-details * {
     font-size: 16px !important;
+  }
+}
+
+/* =========================================================
+   FICHE OFFRE : espace entre la colonne infos et l'Overview
+   ========================================================= */
+
+.ashby-job-posting-left-pane {
+  margin-right: 64px !important;
+}
+
+@media (max-width: 767px) {
+  .ashby-job-posting-left-pane {
+    margin-right: 0 !important;
+    margin-bottom: 32px !important;
   }
 }
